@@ -11,7 +11,7 @@ int main() {
     array<int, SIZE> temps;
     ifstream file("temps.txt");
     if (!file) {
-        cout << "Error opeing file.\n";
+        cout << "Error opening file.\n";
         return 1;
     }
     for (int i = 0; i < SIZE; i++) file >> temps[i];
