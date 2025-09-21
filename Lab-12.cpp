@@ -36,4 +36,15 @@ int main() {
     cout << "Reverse sorted temps: ";
     for (int t : temps) cout << t << " ";
     cout << endl;
+
+    // Find a specific value
+    int target = 90;
+    auto it = find(temps.begin(), temps.end(), target);
+    if (it != temps.end())
+        cout << target << " found at index " << (it - temps.begin()) << endl;
+    else
+        cout << target << " not found.\n";
+
+    // Fill and swap arrays
+    array<int, 5> fives;
 }
