@@ -68,5 +68,11 @@ int main() {
     cout << "\n2D array element [1][2]: " << month[1][2] << endl;
 
     // Simulation: hot/cold days
-    
+    int hotDays = count_if(temps.begin(), temps.end(), [](int t){ return t > 80;});
+    int coldDays = count_if(temps.begin(), temps.end(), [](int t){ return t < 60});
+
+    cout << "\nHot days (>80): " << hotDays << endl;
+    cout << "Cold days (<60): " << coldDays << endl;
+
+    return 0;
 }
