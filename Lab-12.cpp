@@ -46,5 +46,27 @@ int main() {
         cout << target << " not found.\n";
 
     // Fill and swap arrays
-    array<int, 5> fives;
+    array<int, 4> fours;
+    array<int, 4> fives;
+    fours.fill(4);
+    fives.fill(5);
+
+    cout << "\nBefore swap, fours: ";
+    for (int v : fours) cout << v << " ";
+    cout << endl;
+
+    fours.swap(fives);
+    cout << "After swap, fours: ";
+    for (int v : fours) cout << v << " ";
+    cout << endl;
+
+    // 2D array
+    array<int, 3> week1 = {72, 75, 78};
+    array<int, 3> week2 = {80, 83, 85};
+    array<array<int, 3>, 2> month = {week1, week2};
+
+    cout << "\n2D array element [1][2]: " << month[1][2] << endl;
+
+    // Simulation: hot/cold days
+    
 }
